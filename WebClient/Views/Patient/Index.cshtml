@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Patient List";
+}
+
+<h3>Patient List</h3>
+
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Diease Name</th>
+                <th scope="col">Epilepsy</th>
+                <th scope="col">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tblBody">
+        </tbody>
+    </table>
+</div>
+
+
+@section Scripts {
+    <script src="~/js/listPatients.js"></script>
+}

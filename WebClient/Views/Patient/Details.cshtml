@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Patient Details";
+}
+@model DTO.NewPatientDto
+
+<h3>Patient Details</h3>
+
+
+@if (Model.Id == 0)
+{
+    <h2>No Patient Data Found</h2>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-10">Patient Name : @Model.Name</div>
+        <div class="col-md-10">Disease : @Model.DieaseName</div>
+        <div class="col-md-10">Epilepsy : @Model.Epilepsy</div>
+        <div class="col-md-10">NCD : @Model.NCDNames</div>
+        <div class="col-md-10">Allergie : @Model.AllergieNames</div>
+    </div>
+}
+<a asp-action="Index">Back</a>
